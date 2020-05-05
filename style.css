@@ -1,0 +1,102 @@
+/* variables */
+/*:root{
+    --primary: #7ed56f
+    --secondary: #e7c506
+}*/
+/* reset */
+body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+ul {
+     list-style-type: none; 
+}
+
+h1{
+    color: #FFC636
+}
+
+
+h2, h3{
+    color: #DDDBFF
+}
+
+/* base styles */
+body{
+    background: #0A0b5b;
+    font-family: 'RacingSansOne-Regular'; 
+    
+}
+.icon{
+    border: 6px solid rgb(18, 40, 46);
+    border-radius: 150px;
+}
+.btn{
+    background: none;
+    border: 2px solid #FFC636;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 60px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.6); 
+    display: inline-block;
+}
+.btn:hover{
+    color:#222;
+    background:#FFC636;
+}
+
+/* fonts */
+@font-face{
+    font-family: 'RacingSansOne-Regular';
+    src: url('assets/fonts/RacingSansOne-Regular.ttf');
+
+}
+
+/* mobile styles */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+}
+
+.heading--primary h1{
+    grid-column: 1/4;
+    padding: 10px 20px 0px 20px;
+}
+
+.headings-secondary h2{
+    grid-column: 1/4;
+    padding: 0px 20px 0px 20px;
+}
+
+h3 {
+   text-align: center;
+   }
+.heading--primary{}
+
+
+/* small tablet styles */
+@media screen and (min-width: 620px){
+    body{
+        font-size: 18px;
+
+    }
+
+
+}
+
+/* large tablets & laptop styles */
+@media screen and (min-width: 960px){
+    body{
+        font-size: 20px;
+
+    }
+
+}
+
+
+/* desktop styles */
+@media screen and (min-width: 1200px){
+
+}
